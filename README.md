@@ -31,6 +31,30 @@ This version does not use look-ahead buffering or true-peak oversampling. Inter-
 - Apple Silicon or Intel Mac.
 - System-audio capture permission.
 
+## Install with Homebrew
+
+The project publishes a Homebrew Cask from this repository. Add the tap and install the app:
+
+```bash
+brew tap mrBurma/SunriseLimiter https://github.com/mrBurma/SunriseLimiter
+brew install --cask mrBurma/SunriseLimiter/sunrise-limiter
+```
+
+To install a newer release:
+
+```bash
+brew update
+brew upgrade --cask sunrise-limiter
+```
+
+To uninstall:
+
+```bash
+brew uninstall --cask sunrise-limiter
+```
+
+The Homebrew Cask is updated by the release workflow. Releases are distributed as universal ZIP archives for Apple Silicon and Intel Macs. The app is currently distributed without an Apple Developer ID signature and notarization, so macOS may require approval in Privacy & Security before it can open.
+
 ## Build from source
 
 Install Xcode or the Xcode Command Line Tools, then run:
